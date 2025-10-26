@@ -11,7 +11,7 @@
         }
 
         .login-box { /*Cria uma caixa de login */
-            background-color: white;
+            background-color: lightgray;
             padding: 20px;
             width: 250px;
             border-radius: 8px;
@@ -39,19 +39,19 @@
             cursor: pointer;
             margin-top: 10px;
         }
-        .login-box button { /*Adiciona a cor vermelha ao botao de Entrar */
-            background-color: red;
+        .login-box button { /*Adiciona a cor ao botao de Entrar */
+            background-color: black;
         }
     </style>
 </head>
 <body>
     <div class="login-box">
-        <h1>Login</h1>
-        <form action="login.php"method="post">
+        <h1>Login</h1> 
+        <form action="cadastro.html"method="get">  <!--Direciona para a pagina do cadastro-->
             <input type="text" name="usuario" placeholder="Usuario" required>
             <input type="password" name="senha" placeholder="Senha" required>
             <button type="submit">Entrar</button>
         </form>
     </div>
 </body>
-</html>
+</html> 
