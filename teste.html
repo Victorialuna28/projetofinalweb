@@ -2,66 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paciente+</title>
-    <style>
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            background-image: url('imagem de fundo.png'); /*Adiciona imagem ao fundo*/
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            margin: 0;
-            min-height: 100vh;
-            display: grid;
-            place-items: center;
-            padding: 24px;
-        }
-
-        .login-box { /*Cria uma caixa de login */
-           background: var(--box-bg);
-           border: 1px solid var(--box-border);
-           border-radius: 10px;
-           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-           padding: 24px;
-           width: 280px;
-           text-align: center;
-        }
-        .login-box h2 {
-            margin-bottom: 15px;
-        }
-        .login-box input {
-            width: 100%;
-            padding: 8px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        .login-box button{
-            width: 100%;
-            padding: 8px;
-            background-color: blanchedalmond;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        .login-box button { /*Adiciona a cor ao botao de Entrar */
-            background-color: black;
-        }
-    </style>
+    <link rel="stylesheet"href="cadastro.css">
 </head>
 <body>
-    <div class="login-box">
-        <h1>Login</h1> 
-        <form action="menu.html"method="get"> 
-            <input type="text" name="usuario" placeholder="Usuario" required>
-            <input type="password" name="senha" placeholder="Senha" required>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form class="login-form" onsubmit="fazerLogin(event)">
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="'senha">Senha</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
             <button type="submit">Entrar</button>
         </form>
     </div>
+    <script>
+        function fazerLogin(event) {
+            event.preventDefault();
+            window.location.href = "menu.html"
+        }
+    </script>
 </body>
-</html> 
+</html>

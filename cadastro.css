@@ -1,0 +1,67 @@
+/* Estilo da pagina de Cadastro*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/*Caixa Principal*/
+.container {
+    background: white;
+    width: 350px;
+    padding: 25px;
+    border-radius: 10px;
+    border: 3px solid darkred;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    color:rgb(54, 54, 54);
+
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid gainsboro;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+
+}
+
+input:focus, select:focus {
+    border-color: lightcoral;
+
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: darkred ;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+button:hover {
+    background-color: red;
+}
