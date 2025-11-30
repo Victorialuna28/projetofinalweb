@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: antiquewhite;
+    padding: 40px;
+}
+
+h2{
+    color: #4d3b31;
+    margin-bottom: 15px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* FORMULÁRIO */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    max-width: 450px;
+    margin-bottom: 30px;
+}
+
+label{
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #5c4338;
+}
+
+input, select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #d9c7b8;
+    margin-bottom: 20px;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus, select:focus{
+    border-color: #8a6e61;
+}
+
+/* BOTÃO SALVAR */
+button{
+    background-color: #8a6e61;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #5c4338;
+}
+
+/* TABELA */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+thead{
+    background-color: #8a6e61;
+    color: white;
+}
+
+th, td{
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover td{
+    background-color: #f5e8df;
+}
+
+
+table button{
+    background-color: #c74a4a;
+    border-radius: 6px;
+    padding: 5px 12px;
+}
+
+table button:hover{
+    background-color: #8e2e2e;
+}

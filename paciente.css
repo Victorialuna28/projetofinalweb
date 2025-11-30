@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    background: #f7f3ee; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    color: #444; 
+}
+
+h2 {
+    font-size: 32px;
+    color: #5c3f33; 
+    margin-bottom: 20px; 
+    text-align: center;
+    width: 100%;
+}
+
+#formPaciente {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    width: 90%;
+    max-width: 650px;
+    text-align: left; 
+    margin-bottom: 30px;
+}
+
+#formPaciente label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #5c3f33;
+}
+
+.btn-voltar {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 18px;
+    background: #4287f5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.btn-voltar {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #e468ba; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.btn-voltar:hover {
+    background: #c956a1;
+}
+
+
+
+#formPaciente input[type="text"],
+#formPaciente input[type="date"],
+#formPaciente input[type="tel"],
+#formPaciente select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1b3a4; 
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#formPaciente input:focus,
+#formPaciente select:focus {
+    border-color: #5c3f33;
+    outline: none;
+    box-shadow: 0 0 5px rgba(92, 63, 51, 0.3);
+}
+
+
+#campoNomePlano {
+    background-color: #f7e6dc; 
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #d1b3a4;
+}
+
+
+#formPaciente button[type="submit"] {
+    background-color: #f5d8c5; 
+    color: #5c3f33;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #d1b3a4;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: rgba(0,0,0,0.12) 0px 2px 8px;
+    margin-top: 25px;
+    width: 100%;
+}
+
+#formPaciente button[type="submit"]:hover {
+    background-color: #5c3f33; 
+    color: #fff;
+    border-color: #5c3f33;
+}
+
+
+
+#tabelaPacientes {
+    width: 90%;
+    max-width: 900px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#tabelaPacientes th, #tabelaPacientes td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #d1b3a4; 
+}
+
+#tabelaPacientes th {
+    background-color: #f5d8c5; 
+    color: #5c3f33;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#tabelaPacientes tr:nth-child(even) {
+    background-color: #fcfcfc;
+}
+
+#tabelaPacientes tr:hover {
+    background-color: #f0e9e4;
+}
+
+
+#tabelaPacientes td button {
+    background-color: #d99a8a; 
+    color: #5c3f33;
+    border: 2px solid #d99a8a;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: rgba(0,0,0,0.12) 0px 2px 8px;
+}
+
+#tabelaPacientes td button:hover {
+    background-color: #a33f3f; 
+    border-color: #a33f3f;
+    color: #fff;
+}

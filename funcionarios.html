@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paciente+</title>
+    <link rel="stylesheet" href="../css/funcionarios.css">
+</head>
+<body onload="carregarFuncionarios()">
+
+    <h2>Cadastro de Funcionários</h2>
+    <form id="formFuncionario" onsubmit="salvarFuncionario(event)">
+        <label for="Nome">Nome</label>
+        <input type="text" id="Nome" required>
+
+        <label for="Conselho">Conselho (Opcional)</label>
+        <input type="text" id="Conselho">
+
+        <label for="Email">Email</label>
+        <input type="email" id="Email" required>
+
+        <label for="Cargo">Cargo</label>
+        <select id="Cargo" required>
+            <option value="">Selecione...</option>
+            <option value="admin">Administrador</option>
+            <option value="recepcao">Recepção</option>
+            <option value="fisioterapeuta">Fisioterapeuta</option>
+           
+        </select>
+
+        <label for="Login">Login</label>
+        <input type="text" id="Login" required>
+
+        <label for="Senha">Senha</label>
+        <input type="password" id="Senha" required>
+
+        <button type="submit">Salvar Funcionário</button>
+    </form>
+
+    <h2>Lista de Funcionários</h2>
+
+    <table id="tabelaFuncionarios">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Conselho</th>
+                <th>Email</th>
+                <th>Login</th>
+                <th>Cargo</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="../js/funcionarios.js"></script>
+    <script src="../js/app.js"></script>
+<script>
+    proteger(); 
+    let usuario = JSON.parse(localStorage.getItem("logado"));
+
+ 
+    if (usuario.tipo !== "admin") {
+        alert("Acesso restrito! Apenas administradores podem cadastrar funcionários.");
+        window.location.href = "dashboard.html";
+    }
+</script>
+
+
+</body>
+</html>

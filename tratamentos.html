@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paciente+</title>
+    <link rel="stylesheet" href="../css/paciente.css">
+</head>
+<body onload="carregarPacientes()">
+
+    <h2>Lista de Pacientes</h2>
+
+    <input type="text" id="busca" placeholder="Buscar por nome" onkeyup="filtrarPacientes()">
+
+    <a href="../html/pacientes.html" class="btn-voltar">Voltar para o cadastro</a>
+
+
+    <table id="tabelaPacientes">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Telefone</th>
+                <th>Nascimento</th>
+                <th>Atendimento</th>
+                <th>Plano</th>
+                <th>Tratamento</th>
+                <th>Endereço</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="../js/sistema.js"></script>
+    <script src="../js/paciente.js"></script>
+    
+</body>
+</html>
